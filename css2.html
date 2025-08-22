@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="lwa">
+
+    </div>
+    <div id="d1" class="mymenu">
+    <a class="menu">
+        Home
+    </a>
+     <a class="menu">
+        Support
+    </a>
+     <a class="menu">
+        Program
+    </a>
+     <a class="menu">
+        Contact
+    </a>
+     <a class="menu">
+        Inquiry
+    </a>
+</div>
+</body>
+<style>
+    div.lwa{
+        background-color: aqua;
+        border: 2px pink solid ;
+        width: 200px;
+        height: 300px;
+        
+        z-index: +2;
+    }
+    div.lwa:hover
+    {
+        border-radius: 10px;
+        z-index: 1;
+        box-shadow: pink 10px 10px 10px;
+    }
+    div.mymenu{
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        color: blanchedalmond;
+        background-color:brown;
+        border-radius: 20px 0px 20px 0px;
+    }
+    .menu
+    {
+
+       color: white;
+       border: 5px solid purple;
+       display: block;
+       width: 200px;
+       height: 50px;
+       text-align:center;
+       margin: 5px;
+       
+       border-radius:20px 0px 20px 0px;
+       background-color: black;
+       
+    }
+
+    a:hover  /* sudo class pre made classes*/
+    {
+        background-color: brown;
+        width: 210px;
+        box-shadow: blue 10px 10px 10px;
+    }
+</style>
+</html>

@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Content Example</title>
+</head>
+<body>
+  <h2>Type Something and Click Submit</h2>
+
+  <!-- Input Form -->
+  <input type="text" id="userInput" placeholder="Enter your text here">
+  <button id="submitBtn">Submit</button>
+
+  <!-- Display Area -->
+  <div id="output" style="margin-top: 20px; font-weight: bold;"></div>
+
+  <script>
+    // Get elements
+    const inputBox = document.getElementById("userInput");
+    const button = document.getElementById("submitBtn");
+    const outputDiv = document.getElementById("output");
+
+    // Add click event listener to the button
+    button.addEventListener("click", function() {
+      // Get the input value
+      const userText = inputBox.value;
+
+      // Display the text inside the output div
+      outputDiv.innerText = "You entered: " + userText;
+    });
+  </script>
+</body>
+</html>

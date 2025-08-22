@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Interactive Web App</title>
+</head>
+<body>
+  <h2>Interactive Web Page</h2>
+
+  <!-- Step 1: Prompt for user name -->
+  <script>
+    const name = prompt("What is your name?");
+    alert("Hello, " + name + "!");
+  </script>
+
+  <!-- Step 2: Change content using getElementById -->
+  <p id="message">Original Text</p>
+  <script>
+    document.getElementById("message").innerText = "JavaScript is Awesome!";
+  </script>
+
+  <!-- Step 3: Input and button -->
+  <input type="text" id="userInput" placeholder="Type something here">
+  <button id="submitBtn">Submit</button>
+
+  <!-- Step 4: Output Div -->
+  <div id="output" style="margin-top: 20px; font-weight: bold;"></div>
+
+  <!-- Step 5: JavaScript interaction -->
+  <script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+      const inputValue = document.getElementById("userInput").value;
+      document.getElementById("output").innerText = "You entered: " + inputValue;
+    });
+  </script>
+</body>
+</html>
